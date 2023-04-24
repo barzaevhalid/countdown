@@ -1,0 +1,39 @@
+{
+    "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./",
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "plugins": ["jsx-a11y", "@typescript-eslint"],
+    // add new rules here
+    "rules": {
+        "no-console": ["warn", { "allow": ["warn", "error"] }],
+        "curly": ["error", "multi-line"],
+        "react/no-array-index-key": ["error"],
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "enumMember",
+                "format": ["PascalCase"]
+            }
+        ],
+        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
+        "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }]
+    },
+    // override "react-app" rules
+    "overrides": [
+        {
+            "files": ["**/*.(j|t)s?(x)"],
+            "rules": {
+                "array-callback-return": "off"
+            }
+        }
+    ]
+}
