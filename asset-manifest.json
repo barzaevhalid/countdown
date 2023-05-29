@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/countdown/static/js/main.ff53d724.js",
+    "static/media/sound.mp3": "/countdown/static/media/sound.a618108ddaca93bb2287.mp3",
+    "index.html": "/countdown/index.html",
+    "main.ff53d724.js.map": "/countdown/static/js/main.ff53d724.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ff53d724.js"
+  ]
+}
